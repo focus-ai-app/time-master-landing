@@ -5,10 +5,13 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: "/",
+  base: "/time-master-landing/",
   server: {
     host: "::",
     port: 8080,
+  },
+  build: {
+    outDir: 'build',
   },
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
   resolve: {
