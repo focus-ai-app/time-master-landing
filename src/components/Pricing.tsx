@@ -19,7 +19,7 @@ const plans = [
   },
   {
     name: "Профи",
-    price: "$4.99",
+    price: "399₽",
     period: "в месяц",
     description: "Для серьезного контроля времени",
     features: [
@@ -35,7 +35,7 @@ const plans = [
   },
   {
     name: "Максимум",
-    price: "$49",
+    price: "3 990₽",
     period: "в год",
     description: "Лучшее предложение для продуктивности",
     features: [
@@ -54,7 +54,10 @@ const plans = [
 
 const Pricing = () => {
   const handleSelect = (planName: string) => {
-    toast.success(`Вы выбрали тариф "${planName}". Перенаправляем на оформление...`);
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+      contactForm.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
   };
 
   return (

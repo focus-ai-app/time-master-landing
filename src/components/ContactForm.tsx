@@ -25,7 +25,7 @@ const ContactForm = () => {
   };
 
   return (
-    <section className="py-20 bg-background">
+    <section id="contact-form" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-2xl mx-auto">
           <div className="bg-card rounded-3xl shadow-2xl p-8 lg:p-12 animate-scale-in">
@@ -72,8 +72,8 @@ const ContactForm = () => {
                   </SelectTrigger>
                   <SelectContent>
                     <SelectItem value="basic">Базовый (Бесплатно)</SelectItem>
-                    <SelectItem value="premium">Профи ($4.99/мес)</SelectItem>
-                    <SelectItem value="yearly">Максимум ($49/год)</SelectItem>
+                    <SelectItem value="premium">Профи (399₽/мес)</SelectItem>
+                    <SelectItem value="yearly">Максимум (3 990₽/год)</SelectItem>
                   </SelectContent>
                 </Select>
               </div>
