@@ -55,7 +55,7 @@ const Benefits = () => {
                 <benefit.icon className="w-12 h-12" />
               </div>
               
-              <div className="text-5xl font-bold mb-2 gradient-primary bg-clip-text text-transparent">
+              <div className="text-5xl font-bold mb-2 text-accent">
                 {benefit.metric}
               </div>
               
