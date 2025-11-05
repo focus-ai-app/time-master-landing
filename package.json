@@ -1,9 +1,9 @@
 {
-  "name": "my-app",
+  "name": "time-master-landing",
   "private": true,
   "version": "0.1.0",
   "type": "module",
-  "homepage": "https://focus-ai-app.github.io/time-master-landing/my-app",
+  "homepage": "https://focus-ai-app.github.io/time-master-landing",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
