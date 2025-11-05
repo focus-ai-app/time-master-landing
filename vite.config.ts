@@ -11,7 +11,7 @@ export default defineConfig(({ mode }) => ({
     port: 8080,
   },
   build: {
-    outDir: 'dist',
+    outDir: 'build',
   },
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
   resolve: {
