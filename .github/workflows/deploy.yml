@@ -18,6 +18,9 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      VITE_GOOGLE_SCRIPT_URL: ${{ secrets.VITE_GOOGLE_SCRIPT_URL }}
+      VITE_FORM_USE_NO_CORS: ${{ secrets.VITE_FORM_USE_NO_CORS }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
